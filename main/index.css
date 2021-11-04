@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+#top {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.top_all {
+  width: 100%;
+  height: 100vh;
+  background: url(../image/top/top.jpg) no-repeat center;
+  background-size: cover;
+  z-index: -99;
+}
+.top_all::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 20vw solid transparent;
+  border-left: 100vw solid #fff;
+  z-index: -50;
+}
+
+#top .top_ttl {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+/* トップ装飾左から三角形の図形 拡張性を高めるためクラスで作成 */
+.deco_triangle_1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 10vw solid transparent;
+  border-left: 20vw solid cyan;
+  z-index: -10;
+}
+.deco_square_2 {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  width: 20vw;
+  height: 3vw;
+  background: yellow;
+  transform: rotate(30deg);
+  z-index: -5;
+}
+/* .deco_triangle_3 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  border-top: 80vw solid transparent;
+  border-left: 40vw solid #222;
+  z-index: -5;
+} */
